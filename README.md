@@ -31,6 +31,15 @@ GET ```/vehicle/{vehicle_id}/history``` returns all significant movements detect
 - Shapely
 - Python Logging + RotatingFileHandler
 
+## Files
+```app.py```	FastAPI application with geofence logic, event processing, logging, and history
+
+```zones.json```	Defines polygon boundaries for all geofence regions
+
+```requirements.txt```	Python dependencies for running the service
+
+```app.log```	Auto generated rotating log file storing all service events
+
 # How It Works
 
 ## Receive GPS Event
